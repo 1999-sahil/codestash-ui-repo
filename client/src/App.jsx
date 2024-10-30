@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import './App.css'
 import { ThemeContext } from './context/theme-context';
 import ThemeToggle from './components/theme-toggle';
+import Logo from './components/logo';
 
 function App() {
   const { darkTheme } = useContext(ThemeContext);
@@ -26,6 +27,8 @@ function App() {
         pulvinar mi. Cras massa lorem, facilisis a arcu eu, mollis convallis
         urna. Aliquam semper tristique nunc vel placerat. Etiam nec magna ex{" "}
       </div>
+
+      <Logo />
     </div>
     </>
   )

@@ -4,18 +4,11 @@ import { ThemeContext } from '../context/theme-context';
 function ThemeToggle() {
     const { darkTheme, toggleTheme} = useContext(ThemeContext);
   return (
-    <div className="theme-toggle d-flex align-items-center">
-      <label className="switch">
-        <input
-          type="checkbox"
-          checked={darkTheme}
-          onChange={toggleTheme}
-          className="toggle-input"
-        />
-        <span className="slider round"></span>
-      </label>
-      <p className="px-2">{darkTheme ? "Dark Theme" : "Light Theme"}</p>
-    </div>
+    <div className={`${darkTheme ? 'dark-theme' : 'light-theme'}`}>
+            <button onClick={toggleTheme} className="border p-1">
+                Click to change theme
+            </button>
+        </div>
   )
 }
 
