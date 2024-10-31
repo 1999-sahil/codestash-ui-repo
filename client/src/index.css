@@ -13,12 +13,12 @@
   scroll-behavior: smooth;
 }
 
-.dark-theme {
-  background-color: #09090A;
-  color: #fff;
+.dark {
+  background-color: #09090A; /*rgba(23,23,23,1)*/
+  /*color: #fff;*/
 }
 
-.light-theme {
+.light {
   background-color: #fff;
-  color: #0f0f0f;
+  /*color: #0f0f0f;*/
 }
